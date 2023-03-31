@@ -1,0 +1,55 @@
+Sherman Yan
+
+## Design Document ##
+
+- Assignment 5 - P5.21 -
+
+- Inputs
+
+    A number less than or equal to 1000
+
+- Processing
+
+    Convert the number to a roman numeral
+
+- Parameters and Return
+
+    Parameter: integer number, characters of ones, five, tens
+    Return: roman numeral of that number
+
+- Pseudocode
+
+    if input > 8
+        return (call function with number = 10-n) + ten
+    if input > 5
+        add five to roman numeral
+        subtract 5 from input
+    if input < = 3
+        add one * input to roman numeral
+    else:
+        return (call function with number = 5-n) + five
+
+
+- Code
+##
+# Converts a number 1-9 to roman based on string.
+# @param n, a number to convert type int
+# @param one, roman numerals. ie"I"
+# @param five, roman numerals. ie"V"
+# @param ten, roman numerals. ie"X"
+# @return roman numeral of the inputted n
+#
+def romanDigit(n, one, five, ten):
+
+    roman = ""
+    if n > 8:
+        return romanDigit(10-n, one, five, ten) + ten
+    if n > 5:
+        n -= 5
+        roman += five
+    if n <= 3:
+        roman += one * n
+    else:
+        return romanDigit(5-n, one, five, ten) + five
+
+    return roman

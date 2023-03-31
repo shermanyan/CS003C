@@ -1,0 +1,7 @@
+Please enter the file name: dog.bmp
+File Size: 1980054
+Offset: 54
+Width: 800
+Height: 825
+Padding: 0
+First 3 bytes: 178 188 206

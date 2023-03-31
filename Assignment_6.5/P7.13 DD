@@ -1,0 +1,30 @@
+Sherman Yan
+
+## Design Document ##
+
+- Assignment 8 - P7.13 -
+
+
+- main()
+
+call get input for user inputs
+
+while there are user inputs
+    add userinput to total
+    call get input for new user inputs
+
+print the total
+
+- get input function (errors = 0)
+
+try
+    ask user for input cased to float
+    return the userinput
+
+except value error
+    if there are less than 1 errors,
+        print the error
+        call getinput recursively with error = 1
+
+
+

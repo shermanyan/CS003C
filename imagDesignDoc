@@ -1,0 +1,34 @@
+ Sherman Yan, Josiah Aviles, Junyan Wen
+
+## Design Document ##
+
+- ImgProcessing Lab 8 -
+
+- p7.24
+
+Modify Process Pixel
+
+new blue = .7 * blue , convert to int
+new green = .7 * green, convert to int
+new red = red
+
+- p7.25
+
+Modify Process Pixel
+
+greyness = blue * .11 + green * .51 + .3 * red, convert to int
+new blue = v
+new green = greyness
+new red = greyness
+
+- for questions:
+
+print the file size using filesize
+print the offset using start
+print the width using width
+print the height using height
+print the padding using padding
+
+seek 0  to go to beginning of file
+read 3 bytes
+print the list of 3 bytes

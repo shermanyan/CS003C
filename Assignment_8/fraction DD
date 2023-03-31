@@ -1,0 +1,36 @@
+ Sherman Yan
+
+## Design Document ##
+
+- Assignment 8 - Fraction class tester -
+
+comboLock Class:
+
+   added operators:
+        __neg__
+            add negative sign to the numerator
+            return new fraction as object
+        __mul__
+            multiplies two fractions together by multiplying numerators and denominators
+            return new fraction as object
+        __truediv__
+            divides two fractions together by multiplying fractions by its reciprocal
+            return new fraction as object
+
+   updated operators:
+        __sub__
+            change to: self + (-rhsValue)
+        __eq__
+            check if each is less of the other, return true or false
+
+   Documentation:
+        __neg__
+            ## adds - to the numerator of the fraction
+            # @return negative fraction as object
+        __mul__
+            ## multiplies two fractions together
+            # @return multplied fraction as object
+        __truediv__
+                ## divides two fractions
+                # @return fraction as object
+                #

@@ -1,0 +1,63 @@
+ Sherman Yan
+
+## Design Document ##
+
+- Assignment 7 - P9.9 -
+
+comboLock Class:
+    Responsibilities:
+        set lock with code
+        reset the dial
+        turn left with given number of ticks
+        turn right with given number of ticks
+        open lock
+
+    Constructor:
+        create empty list for order and code
+    Methods:
+        combolock:
+            param: secret1, secret2, secret3
+            store secrets to code
+        reset:
+            clear order and code list
+        turnLeft:
+            param: ticks
+            if the ticks are valid ticks:
+                append 'left', number of turn to order list
+        turnRight:
+            param: ticks
+            if the ticks are valid ticks:
+                append 'right', number of turn to order list
+        open:
+            check if the length of turns is == length of the code and the order is correct (right, left, right)
+                    iterate through the order
+                        if not the order at index is same as the code at index
+                            break
+                    else
+                        return true
+            return false
+
+    Documentation:
+
+        __init__
+            ## constructs list for order and code
+            #
+        combolock:
+            ## sets the code for the lock
+            # @param: secret1, secret2, secret3 stores the code for the lock
+            #
+        reset:
+            ## clears order and code list
+            #
+        turnRight:
+            ## appends 'right', ticks to order list
+            # @param: ticks number turned to on lock
+            #
+        turnLeft:
+            ## appends 'left', ticks to order list
+            # @param: ticks number turned to on lock
+            #
+        open:
+            ## checks if the lock can be opened from code and order lists
+            # @return true or false based on whether condition matched
+            #

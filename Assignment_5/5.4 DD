@@ -1,0 +1,44 @@
+Sherman Yan
+
+## Design Document ##
+
+- Assignment 5 - P5.4 -
+
+- Inputs
+
+    A string
+
+- Processing
+
+    Return the middle character in a string
+
+- Parameters and Return
+
+    Parameter: string
+    Return: middle character(s)
+
+- Pseudocode
+
+Length = length of string
+middleIndex = floor of  Length of string / 2
+If length % 2 == 0
+Return string at middle index  - 1 + string at middle index
+Else
+Return string at middle index
+
+- Code
+
+def middle(word):
+    length = len(word)
+
+    middle_index = length // 2
+
+    if length % 2 == 0:
+        return str(word[middle_index - 1] + word[middle_index])
+    else:
+        return str(word[middle_index])
+
+
+
+
+

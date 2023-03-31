@@ -1,0 +1,45 @@
+ Sherman Yan
+
+## Design Document ##
+
+- Assignment 7 - P9.10 -
+
+VotingMachine Class:
+    Responsibilities:
+        tally votes for democrat
+        tally votes for republican
+        clear tallies
+        get tallies
+
+    Constructor:
+        set democrat votes to 0
+        set republican votes to 0
+    Methods:
+        voteDemocrat:
+            democrats +=1
+        voteRepublicans:
+            republicans +=1
+        clear:
+            set democrat votes to 0
+            set republican votes to 0
+        getTallies:
+            return democrats, republicans
+
+    Documentation:
+        voteDemocrat:
+            ##
+            # add one to democrats
+            #
+        voteRepublicans:
+            ##
+            # add one to republicans
+            #
+        clear:
+            ##
+            # set democrat votes to 0
+            # set republican votes to 0
+            #
+        getTallies:
+            ##
+            # returns democrat amount + republican amount
+            # return@ democrats, republicans

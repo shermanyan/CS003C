@@ -1,0 +1,47 @@
+Sherman Yan
+
+## Design Document ##
+
+- Assignment 5 - P5.28 -
+
+- Inputs
+
+    Income and Number of Children
+
+- Processing
+
+    Determine if and how much aid based on stats
+
+- Parameters and Return
+
+    Parameter: income and num of children
+    Return: aid amount
+
+- Pseudocode
+
+    if 30,000 < income < 40,000 and children >= 3
+        return children * $1,000
+    elif 20,000 < income < 30,000 and children >= 2
+        return children * $1,500
+    elif income < 20,000
+        return children * $2,000
+    else
+        return 0
+
+- Code
+
+def calcAidAmt(income, children):
+
+    if 30000 < income < 40000 and children >= 3:
+        return children * 1000
+    elif 20000 < income < 30000 and children >= 2:
+        return children * 1500
+    elif income < 20000:
+        return children * 2000
+    else:
+        return 0
+
+
+
+
+

@@ -1,0 +1,55 @@
+Sherman Yan
+
+## Design Document ##
+
+- Assignment 8 - P7.6 -
+
+Usage: python3 P7.3.py searchFiles [searchFiles] [searchFiles] [searchFiles]
+
+
+- main()
+
+if the length of the argv is less than 2
+    return the usage
+
+search target is the argv at index 1
+
+for i in range 2 - the length of argv
+    add argv at i to input file names
+
+# open files
+for i in the range of the length of the input file name
+    open all the files with type r and append them to a list
+
+# search files
+
+for i in the range of the opened files
+    print the file name and the results of the search
+
+# close the files
+
+for i in the range of the opened files
+    close the file from the opened files list at index
+
+
+
+- searchTarget function (file, target)
+
+for every line in the file
+    if the target is found in the line
+        append to a list of lines that have the target
+
+return the list of lines
+
+
+
+- openFile function
+
+    try opening the file
+    except ioerror
+        print  "opening error"
+
+
+
+
+

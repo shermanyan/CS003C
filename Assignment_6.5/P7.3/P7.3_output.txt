@@ -1,0 +1,7 @@
+/* 1 */ Mary had a little lamb
+
+/* 2 */ Whose fleese was white as snow
+
+/* 3 */ And everywhere that Mary went,
+
+/* 4 */ The lamb was sure to go!

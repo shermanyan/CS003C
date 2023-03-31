@@ -1,0 +1,49 @@
+Sherman Yan
+
+## Design Document ##
+
+- Assignment 8 - P7.3 -
+
+Usage: python3 P7.3.py infile outfile
+
+- main()
+
+check the length of the argv
+    if more than 3,
+        return usage
+
+for i in range 1 - length of argv
+
+    numberfiles += 1
+
+    if number files = 1
+        its a input file
+        store as input file name
+    else if number files = 2
+        its a output file
+        store as output file name
+
+open input file annd output file
+
+write to the output file
+
+line number = 1
+for every line in the inputfile
+
+    write to the output file with "/* linenumber */  in front of it
+
+    line number +=1
+
+close files
+
+
+- openFile function
+
+    try opening the file
+    except ioerror
+        print  "opening error"
+
+
+
+
+
